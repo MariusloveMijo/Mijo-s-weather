@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App - JavaScript</title>
+    <link rel="stylesheet" href="font/Rimouski.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Weather">
+        <header class= "Weather-header">
+            <h1>Weather</h1>
+        </header>
+        <section class="Weather-main">
+            <img src="./icons/01d.png" alt="clear day" class="Weather-image">
+            <p class="Weather-temperature">
+                <span class="weather-number">18</span> 
+                <span class="I-think-I-got-this">&#186;</span>
+                <span class="Weather-celsius"> </span>
+
+            </p>
+            <p class="Weather-description">
+                few clouds
+            </p>
+            <h2 class="Weather-location">London,GB </h2>
+        </section>
+        <footer class="Weather-option">
+            <input class="Weather-search" type="search" placeholder="introdu orasul"/>
+            <article class="Weather-units" >
+             <input type="radio" id="metric" name="units" value="metric"  >
+                 <label for="metric" class="weather-metric">metric</label>
+             <input type="radio" id="imperial" name="units" value="imperial">
+                <label for="imperial" class="weather-metric">imperial</label>
+                <input type="radio" id="standard" name="units" value="standard" checked>
+                 <label for="standard" >kelvin</label>
+             </article>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
+

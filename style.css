@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html, body{
+    font-family: "Rimouski";
+}
+.Weather {
+font-size: 30px;
+width: 500px;
+margin: 0 auto;
+border: palevioletred 2px solid;
+}
+.Weather-header{
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0px ;
+}
+.Weather-main{
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: bolder;
+    background-color: mediumslateblue;
+}
+.weather-number{
+    font-size: 105px;
+    text-align: center;
+    font-weight: bolder;
+    
+}
+.I-think-I-got-this{
+    font-size: 105px;
+}
+.Weather-description{
+    margin: 0;
+    font-size: 55px;
+    
+}
+.Weather-celsius{
+    margin-left: 10px;
+    font-size: 100px;
+    font-weight: bolder;
+    text-align: end;
+}
+.Weather-location{
+    font-size: 45px;
+}
+.Weather-search input{
+    text-align: center;
+    width: 100%;
+   
+} 
+.Weather-search{
+font-size: 25px;
+ width: 100%;
+}
+.Weather-option{
+    padding: 10px;
+}
+.Weather-units{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.weather-metric{
+   margin-right: 10px;
+}
