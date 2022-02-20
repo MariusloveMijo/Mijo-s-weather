@@ -2,8 +2,8 @@ var apikey = '8c4d35765092f0f719cacf8eae05ac99';
 var apilocation ="Bucharest,ro";
 var apiunits=document.querySelector('input[name="units"]:checked').value;
 var apiurl= `https://api.openweathermap.org/data/2.5/weather?q=${apilocation}&appid=${apikey}`
-var apiurlM=`https://api.openweathermap.org/data/2.5/weather?q=${apilocation}&units=metric`
-var apiurlI=`https://api.openweathermap.org/data/2.5/weather?q=${apilocation}&units=imperial`
+var apiurlM=`https://api.openweathermap.org/data/2.5/weather?q=${apilocation}&appid=${apikey}&units=metric`
+var apiurlI=`https://api.openweathermap.org/data/2.5/weather?q=${apilocation}&appid=${apikey}&units=imperial`
 
 var weatherDescription = document.querySelector('.Weather-description');
 var weatherLocation = document.querySelector(".Weather-location")
