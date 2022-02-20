@@ -136,7 +136,7 @@ searchInput.addEventListener('search',function(event){
    weatherLocation.innerHTML= data.name
    weatherNumber.innerHTML = Math.floor(data.main.temp)
    weatherIcon.src= `./icons/${data.weather[0].icon}.png`
-   WeatherTemperatureMetric =Math.floor(data.main.temp)
+   WeatherTemperatureMetric =Math.floor(WeatherTempreture -273)
     
         })
     })
@@ -157,7 +157,7 @@ searchInput.addEventListener('search',function(event){
    weatherLocation.innerHTML= data.name
    weatherNumber.innerHTML = Math.floor(data.main.temp)
    weatherIcon.src= `./icons/${data.weather[0].icon}.png`
-   WeatherTemperatureimperial =Math.floor(data.main.temp)
+   WeatherTemperatureimperial =Math.floor(WeatherTemprature*9/5  - 459.67)
     
         })
     })
