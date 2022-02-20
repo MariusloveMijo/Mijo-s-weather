@@ -2,8 +2,8 @@ var apikey = '8c4d35765092f0f719cacf8eae05ac99';
 var apilocation ="Bucharest,ro";
 var apiunits=document.querySelector('input[name="units"]:checked').value;
 var apiurl= `https://api.openweathermap.org/data/2.5/weather?q=${apilocation}&appid=${apikey}`
-var apiurlM=`https://api.openweathermap.org/data/2.5/weather?q=${apilocation}&units=metric&appid=${apikey}`
-var apiurlI=`https://api.openweathermap.org/data/2.5/weather?q=${apilocation}&units=imperial&appid=${apikey}`
+var apiurlM=`https://api.openweathermap.org/data/2.5/weather?q=${apilocation}&units=metric`
+var apiurlI=`https://api.openweathermap.org/data/2.5/weather?q=${apilocation}&units=imperial`
 
 var weatherDescription = document.querySelector('.Weather-description');
 var weatherLocation = document.querySelector(".Weather-location")
@@ -136,7 +136,7 @@ searchInput.addEventListener('search',function(event){
    weatherLocation.innerHTML= data.name
    weatherNumber.innerHTML = Math.floor(data.main.temp)
    weatherIcon.src= `./icons/${data.weather[0].icon}.png`
-   WeatherTemperatureMetric =Math.floor(WeatherTempreture -273)
+   WeatherTemperatureMetric =Math.floor(data.main.temp)
     
         })
     })
@@ -157,7 +157,7 @@ searchInput.addEventListener('search',function(event){
    weatherLocation.innerHTML= data.name
    weatherNumber.innerHTML = Math.floor(data.main.temp)
    weatherIcon.src= `./icons/${data.weather[0].icon}.png`
-   WeatherTemperatureimperial =Math.floor(WeatherTemprature*9/5  - 459.67)
+   WeatherTemperatureimperial =Math.floor(data.main.temp)
     
         })
     })
